@@ -1,0 +1,248 @@
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\appsettings.Development.json
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\appsettings.json
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.staticwebassets.runtime.json
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.exe
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.deps.json
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.runtimeconfig.json
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.pdb
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Azure.Core.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Azure.Identity.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProjects.BLL.dll
+C:\Docker Projects\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProjects.BLL.pdb
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.csproj.AssemblyReference.cache
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.AssemblyInfoInputs.cache
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.AssemblyInfo.cs
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.csproj.CoreCompileInputs.cache
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.RazorAssemblyInfo.cache
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.RazorAssemblyInfo.cs
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.PersonalProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.build.PersonalProject.props
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PersonalProject.props
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PersonalProject.props
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets.build.json
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets.development.json
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\scopedcss\bundle\PersonalProject.styles.css
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\scopedcss\projectbundle\PersonalProject.bundle.scp.css
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.csproj.CopyComplete
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.dll
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\refint\PersonalProject.dll
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.pdb
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.genruntimeconfig.cache
+C:\Docker Projects\PersonalProject\PersonalProject\obj\Debug\net7.0\ref\PersonalProject.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\appsettings.Development.json
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\appsettings.json
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.staticwebassets.runtime.json
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.exe
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.deps.json
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.runtimeconfig.json
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.pdb
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Azure.Core.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Azure.Identity.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Humanizer.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Seq.Extensions.Logging.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Sinks.PeriodicBatching.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Sinks.Seq.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\System.CodeDom.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Memory.Data.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.BLL.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.BLL.pdb
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.csproj.AssemblyReference.cache
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.AssemblyInfoInputs.cache
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.AssemblyInfo.cs
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.csproj.CoreCompileInputs.cache
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.MvcApplicationPartsAssemblyInfo.cache
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.RazorAssemblyInfo.cache
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.RazorAssemblyInfo.cs
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.PersonalProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.build.PersonalProject.props
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PersonalProject.props
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PersonalProject.props
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets.pack.json
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets.build.json
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets.development.json
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\scopedcss\bundle\PersonalProject.styles.css
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\scopedcss\projectbundle\PersonalProject.bundle.scp.css
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.csproj.CopyComplete
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\refint\PersonalProject.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.pdb
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.genruntimeconfig.cache
+C:\DockerProjects2\PersonalProject\PersonalProject\obj\Debug\net7.0\ref\PersonalProject.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\AutoMapper.dll
+C:\DockerProjects2\PersonalProject\PersonalProject\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\appsettings.Development.json
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\appsettings.json
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.staticwebassets.runtime.json
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.exe
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.deps.json
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.runtimeconfig.json
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.pdb
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\AutoMapper.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Azure.Core.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Azure.Identity.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Humanizer.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Seq.Extensions.Logging.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Sinks.PeriodicBatching.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\Serilog.Sinks.Seq.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\System.CodeDom.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\System.Memory.Data.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.BLL.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\bin\Debug\net7.0\PersonalProject.BLL.pdb
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.csproj.AssemblyReference.cache
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.AssemblyInfoInputs.cache
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.AssemblyInfo.cs
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.csproj.CoreCompileInputs.cache
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.MvcApplicationPartsAssemblyInfo.cache
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.RazorAssemblyInfo.cache
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.RazorAssemblyInfo.cs
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.PersonalProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.build.PersonalProject.props
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PersonalProject.props
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PersonalProject.props
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets.pack.json
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets.build.json
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\staticwebassets.development.json
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\scopedcss\bundle\PersonalProject.styles.css
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\scopedcss\projectbundle\PersonalProject.bundle.scp.css
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.csproj.CopyComplete
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\refint\PersonalProject.dll
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.pdb
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\PersonalProject.genruntimeconfig.cache
+C:\DockerProjects2\Docker-PersonalProject\PersonalProject\obj\Debug\net7.0\ref\PersonalProject.dll

@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  personalproject:
+    image: gelusele/personalproject:release
+    build:
+      context: .
+      dockerfile: PersonalProject/Dockerfile
+    depends_on: 
+      - seqlogs
+    ports:
+      - "5005:80"
+  
+  persproj_db:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      SA_PASSWORD: "MyPassword123!"
+      ACCEPT_EULA: "Y"
+    volumes:
+      -  app_volume:/var/opt/mssql
+    ports:
+      - "5090:1433"
+
+  seqlogs:
+    image: datalust/seq
+    restart: unless-stopped
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - "5341:80"
+
+volumes:
+  app_volume:

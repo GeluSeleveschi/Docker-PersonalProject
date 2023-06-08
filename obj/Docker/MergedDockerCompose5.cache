@@ -1,0 +1,52 @@
+name: dockercompose13145999480611129408
+services:
+  personalproject:
+    build:
+      context: C:\DockerProjects2\Docker-PersonalProject
+      dockerfile: PersonalProject/Dockerfile
+    depends_on:
+      seqlogs:
+        condition: service_started
+    image: gelusele/personalproject:release
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5005"
+      protocol: tcp
+  persproj_db:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: MyPassword123!
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "5090"
+      protocol: tcp
+    volumes:
+    - type: volume
+      source: app_volume
+      target: /var/opt/mssql
+      volume: {}
+  seqlogs:
+    environment:
+      ACCEPT_EULA: "Y"
+    image: datalust/seq
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5341"
+      protocol: tcp
+    restart: unless-stopped
+networks:
+  default:
+    name: dockercompose13145999480611129408_default
+volumes:
+  app_volume:
+    name: dockercompose13145999480611129408_app_volume

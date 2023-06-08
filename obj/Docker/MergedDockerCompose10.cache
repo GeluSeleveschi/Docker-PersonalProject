@@ -1,0 +1,113 @@
+name: dockercompose13145999480611129408
+services:
+  personalproject:
+    build:
+      context: C:\DockerProjects2\Docker-PersonalProject
+      dockerfile: PersonalProject/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: PersonalProject
+      target: base
+    container_name: PersonalProject_1_1
+    depends_on:
+      seqlogs:
+        condition: service_started
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: gelusele/personalproject:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net7.0/PersonalProject.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5005"
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\DockerProjects2\Docker-PersonalProject\PersonalProject
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\DockerProjects2\Docker-PersonalProject
+      target: /src
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\gelu\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\gelu\.nuget\packages\
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+      target: /root/.nuget/fallbackpackages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\gelu\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\gelu\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+  persproj_db:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: MyPassword123!
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "5090"
+      protocol: tcp
+    volumes:
+    - type: volume
+      source: app_volume
+      target: /var/opt/mssql
+      volume: {}
+  seqlogs:
+    environment:
+      ACCEPT_EULA: "Y"
+    image: datalust/seq
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5341"
+      protocol: tcp
+    restart: unless-stopped
+networks:
+  default:
+    name: dockercompose13145999480611129408_default
+volumes:
+  app_volume:
+    name: dockercompose13145999480611129408_app_volume

@@ -1,0 +1,35 @@
+﻿@model PersonalProject.BLL.Models.ProductViewModel
+
+@{
+    ViewBag.Title = Model.Id != 0 ? "Edit Product" : "Add Product";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.Id)
+    <div class="form-group">
+        @Html.LabelFor(model => model.ProductName)
+        @Html.TextBoxFor(model => model.ProductName, new { @class = "form-control" })
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(model => model.ProductDescription)
+        @Html.TextBoxFor(model => model.ProductDescription, new { @class = "form-control" })
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ProductPrice)
+        @Html.TextBoxFor(model => model.ProductPrice, new { @class = "form-control" })
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ProductQuantity)
+        @Html.TextBoxFor(model => model.ProductQuantity, new { @class = "form-control" })
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Add</button>
+}

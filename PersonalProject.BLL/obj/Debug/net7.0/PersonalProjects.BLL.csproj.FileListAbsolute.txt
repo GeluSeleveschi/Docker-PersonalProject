@@ -1,0 +1,19 @@
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\bin\Debug\net7.0\PersonalProjects.BLL.deps.json
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\bin\Debug\net7.0\PersonalProjects.BLL.runtimeconfig.json
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\bin\Debug\net7.0\PersonalProjects.BLL.dll
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\bin\Debug\net7.0\PersonalProjects.BLL.pdb
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.csproj.AssemblyReference.cache
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.AssemblyInfoInputs.cache
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.AssemblyInfo.cs
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.csproj.CoreCompileInputs.cache
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.dll
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\refint\PersonalProjects.BLL.dll
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.pdb
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.genruntimeconfig.cache
+C:\Docker Projects\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\ref\PersonalProjects.BLL.dll
+C:\DockerProjects2\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.csproj.AssemblyReference.cache
+C:\DockerProjects2\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\DockerProjects2\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.AssemblyInfoInputs.cache
+C:\DockerProjects2\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.AssemblyInfo.cs
+C:\DockerProjects2\PersonalProject\PersonalProjects.BLL\obj\Debug\net7.0\PersonalProjects.BLL.csproj.CoreCompileInputs.cache
