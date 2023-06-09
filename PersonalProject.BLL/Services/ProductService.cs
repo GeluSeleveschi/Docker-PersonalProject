@@ -108,5 +108,18 @@ namespace PersonalProject.BLL.Services
 
             return false;
         }
+
+        public List<ProductToSellModel> GetAllProductsToSell()
+        {
+            var productsToSell = _dbContext.Products.Where(p => p.ProductQuantity > 0).Select(p =>
+            new ProductToSellModel
+            {
+                ProductId = p.Id,
+                ProductName = p.ProductName,
+                ProductPrice = p.ProductPrice,
+            }).ToList();
+
+            return productsToSell;
+        }
     }
 }

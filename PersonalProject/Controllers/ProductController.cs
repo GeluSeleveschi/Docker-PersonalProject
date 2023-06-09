@@ -53,5 +53,12 @@ namespace PersonalProject.Controllers
             _productService.DeleteProduct(id);
             return RedirectToAction("GetAllProducts");
         }
+
+        public IActionResult DisplayProductsToSell()
+        {
+            var model = _productService.GetAllProductsToSell();
+
+            return View("ProductsToSell", model);
+        }
     }
 }

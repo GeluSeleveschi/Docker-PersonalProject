@@ -10,5 +10,7 @@ namespace PersonalProject.BLL.Services.Interfaces
         ProductViewModel GetProductById(int? id);
         bool UpdateProduct(ProductViewModel model);
         bool DeleteProduct(int productId);
+        
+        List<ProductToSellModel> GetAllProductsToSell();
     }
 }
