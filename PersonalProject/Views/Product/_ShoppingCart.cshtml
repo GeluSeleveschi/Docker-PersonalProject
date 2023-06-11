@@ -1,0 +1,46 @@
+﻿@model PersonalProject.BLL.Models.ShoppingCartModel
+<section class="shoppingCart">
+    <table class="table" id="shoppingCart-table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayName("Product")
+                </th>
+                <th>
+                    @Html.DisplayName("Price")
+                </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ShoppingCartProducts)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductPrice)
+                    </td>
+                    <td>
+                        @*<a asp-action="DeleteProduct" asp-controller="Product" asp-route-id="@item.Id">Delete</a>*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pull-right">
+        <span>Total Cost: </span> @Html.DisplayFor(model => model.TotalCost)
+    </div>
+</section>
+<style>
+    .pull-right {
+        text-align: end;
+        font-weight: 600;
+    }
+
+    .shoppingCart {
+        width: 100%;
+        min-width: 320px;
+    }
+</style>

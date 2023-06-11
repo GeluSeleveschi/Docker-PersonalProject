@@ -1,46 +1,103 @@
-﻿@model IEnumerable<PersonalProject.BLL.Models.ProductToSellModel>
+﻿@using Newtonsoft.Json;
+@using System.Web;
+@model PersonalProject.BLL.Models.ShoppingCartModel
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     <title>Add Icon Button Example</title>
 </head>
 <body>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.ProductName)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ProductPrice)
-                </th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
+    @if (Model.ShoppingCartProducts != null && Model.ShoppingCartProducts.Any())
+    {
+        <div id="shopping-cart">
+            @Html.Partial("_ShoppingCart")
+        </div>
+    }
+    <section class="products">
+        <table class="table" id="product-table">
+            <thead>
                 <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ProductName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ProductPrice)
-                    </td>
-                    <td>
-                        <button type="button" id="add-btn">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </td>
+                    <th>
+                        @Html.DisplayName("Product")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Price")
+                    </th>
+                    <th class="action">Actions</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ProductsToSell)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductPrice)
+                        </td>
+                        <td class="action">
+                            <button type="button" class="add-btn" data-product-id="@item.ProductId" data-product-name="@item.ProductName" data-product-price="@item.ProductPrice">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
 </body>
 
 <style>
-    #add-btn {
+    .add-btn {
         border-radius: 30px;
         margin-left: 1rem;
     }
+
+    #shopping-cart {
+        text-align: -webkit-right;
+        position: absolute;
+        right: 7%;
+    }
+
+    .products {
+        width: 85%;
+    }
+
+    .action {
+        text-align: center;
+    }
 </style>
+
+
+<script>
+    $('.add-btn').click(function () {
+        var productId = $(this).data('product-id');
+        var productName = $(this).data('product-name');
+        var productPrice = $(this).data('product-price');
+
+        var product = {
+            productId: productId,
+            productName: productName,
+            productPrice: productPrice
+        };
+
+        addProductToShoppingCart(product);
+    });
+
+    function addProductToShoppingCart(product) {
+        $.ajax({
+            url: '/Product/AddProductsToShoppingCart',
+            data: { product: product },
+            type: 'POST',
+            success: function (response) {
+                if (response.success) {
+                    toastr.success("Product added successfully", "Success");
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 700);
+                }
+            }
+        });
+    }
+</script>

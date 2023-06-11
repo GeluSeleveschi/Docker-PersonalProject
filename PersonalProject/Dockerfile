@@ -6,11 +6,11 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["PersonalProject/PersonalProject.csproj", "PersonalProject/"]
-COPY ["PersonalProject.BLL/PersonalProject.BLL.csproj", "PersonalProject.BLL/"]
-RUN dotnet restore "PersonalProject/PersonalProject.csproj"
+COPY ["Docker-PersonalProject/PersonalProject.csproj", "PersonalProject/"]
+COPY ["Docker-PersonalProject.BLL/PersonalProject.BLL.csproj", "PersonalProject.BLL/"]
+RUN dotnet restore "Docker-PersonalProject/PersonalProject.csproj"
 COPY . .
-WORKDIR "/src/PersonalProject"
+WORKDIR "/src/Docker-PersonalProject"
 RUN dotnet build "PersonalProject.csproj" -c Release -o /app/build
 
 FROM build AS publish

@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PersonalProject.BLL.Entities;
 using PersonalProject.BLL.Models;
 using PersonalProject.BLL.Services.Interfaces;
 
@@ -27,7 +26,7 @@ namespace PersonalProject.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddEditProduct(ProductViewModel model)
+        public IActionResult AddEditProduct(ProductModel model)
         {
             var result = false;
             if (model != null && model.Id != 0)
@@ -59,6 +58,13 @@ namespace PersonalProject.Controllers
             var model = _productService.GetAllProductsToSell();
 
             return View("ProductsToSell", model);
+        }
+
+        [HttpPost]
+        public ActionResult AddProductsToShoppingCart(ProductToSellModel product)
+        {
+            var model = _productService.AddProductsToSellToShoppingCart(product);
+            return Json(new { success = model.ShoppingCartProducts.Any() });
         }
     }
 }

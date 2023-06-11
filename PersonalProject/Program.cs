@@ -18,7 +18,7 @@ namespace PersonalProject
                 .CreateLogger();
 
             builder.Logging.AddSerilog(logger);
-
+            builder.Services.AddMemoryCache();
             var mapperConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new MappingProfile());

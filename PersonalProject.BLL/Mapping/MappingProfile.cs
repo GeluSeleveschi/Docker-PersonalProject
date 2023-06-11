@@ -8,7 +8,7 @@ namespace PersonalProject.BLL.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<Product, ProductViewModel>().ReverseMap();
+            CreateMap<Product, ProductModel>().ReverseMap();
         }
     }
 }

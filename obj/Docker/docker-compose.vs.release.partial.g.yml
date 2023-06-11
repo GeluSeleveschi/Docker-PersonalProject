@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   personalproject:
-    container_name: PersonalProject_1_1
+    container_name: PersonalProject
     build:
       labels:
         com.microsoft.created-by: "visual-studio"

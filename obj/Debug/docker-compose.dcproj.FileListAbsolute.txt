@@ -25,9 +25,10 @@ C:\DockerProjects2\PersonalProject\obj\Debug\docker-compose.dcproj.AssemblyRefer
 C:\DockerProjects2\PersonalProject\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\DockerProjects2\PersonalProject\obj\Debug\docker-compose.dcproj.CopyComplete
 C:\DockerProjects2\PersonalProject\bin\Debug\AutoMapper.dll
-C:\DockerProjects2\Docker-PersonalProject\bin\Debug\appsettings.Development.json
+C:\DockerProjects2\Docker-PersonalProject\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\DockerProjects2\Docker-PersonalProject\bin\Debug\PersonalProject.deps.json
 C:\DockerProjects2\Docker-PersonalProject\bin\Debug\PersonalProject.runtimeconfig.json
+C:\DockerProjects2\Docker-PersonalProject\bin\Debug\appsettings.Development.json
 C:\DockerProjects2\Docker-PersonalProject\bin\Debug\appsettings.json
 C:\DockerProjects2\Docker-PersonalProject\bin\Debug\PersonalProject.staticwebassets.runtime.json
 C:\DockerProjects2\Docker-PersonalProject\bin\Debug\PersonalProject.exe
@@ -50,5 +51,4 @@ C:\DockerProjects2\Docker-PersonalProject\bin\Debug\Microsoft.Identity.Client.dl
 C:\DockerProjects2\Docker-PersonalProject\bin\Debug\PersonalProject.pdb
 C:\DockerProjects2\Docker-PersonalProject\bin\Debug\PersonalProject.BLL.pdb
 C:\DockerProjects2\Docker-PersonalProject\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
-C:\DockerProjects2\Docker-PersonalProject\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\DockerProjects2\Docker-PersonalProject\obj\Debug\docker-compose.dcproj.CopyComplete

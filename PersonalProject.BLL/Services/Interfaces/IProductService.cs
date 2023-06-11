@@ -5,12 +5,14 @@ namespace PersonalProject.BLL.Services.Interfaces
 {
     public interface IProductService
     {
-        bool AddProduct(ProductViewModel model);
+        bool AddProduct(ProductModel model);
         List<Product> GetAllProducts();
-        ProductViewModel GetProductById(int? id);
-        bool UpdateProduct(ProductViewModel model);
+        ProductModel GetProductById(int? id);
+        bool UpdateProduct(ProductModel model);
         bool DeleteProduct(int productId);
-        
-        List<ProductToSellModel> GetAllProductsToSell();
+
+        ShoppingCartModel GetAllProductsToSell();
+        ShoppingCartModel AddProductsToSellToShoppingCart(ProductToSellModel productToSell);
+        ShoppingCartModel ShoppingCartProducts();
     }
 }

@@ -3,7 +3,7 @@ version: '3.4'
 services:
   personalproject:
     image: gelusele/personalproject:dev
-    container_name: PersonalProject_1_1
+    container_name: PersonalProject
     build:
       target: base
       labels:

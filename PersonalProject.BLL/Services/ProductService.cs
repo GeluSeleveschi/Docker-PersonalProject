@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using PersonalProject.BLL.Entities;
 using PersonalProject.BLL.Models;
@@ -12,15 +13,17 @@ namespace PersonalProject.BLL.Services
         private readonly AppDbContext _dbContext;
         private readonly ILogger<ProductService> _logger;
         private readonly IMapper _mapper;
+        private readonly IMemoryCache _memoryCache;
 
-        public ProductService(AppDbContext dbContext, ILogger<ProductService> logger, IMapper mapper)
+        public ProductService(AppDbContext dbContext, ILogger<ProductService> logger, IMapper mapper, IMemoryCache memoryCache)
         {
             _dbContext = dbContext;
             _logger = logger;
             _mapper = mapper;
+            _memoryCache = memoryCache;
         }
 
-        public bool AddProduct(ProductViewModel model)
+        public bool AddProduct(ProductModel model)
         {
             try
             {
@@ -50,14 +53,14 @@ namespace PersonalProject.BLL.Services
             }
         }
 
-        public ProductViewModel GetProductById(int? id)
+        public ProductModel GetProductById(int? id)
         {
             try
             {
                 if (id.HasValue && id.Value != 0)
                 {
                     var product = _dbContext.Products.AsNoTracking().FirstOrDefault(p => p.Id == id.Value) ?? new Product();
-                    var productViewModel = _mapper.Map(product, new ProductViewModel());
+                    var productViewModel = _mapper.Map(product, new ProductModel());
                 }
             }
             catch (Exception ex)
@@ -65,10 +68,10 @@ namespace PersonalProject.BLL.Services
                 _logger.LogError(ex?.InnerException?.Message ?? ex?.Message);
             }
 
-            return new ProductViewModel();
+            return new ProductModel();
         }
 
-        public bool UpdateProduct(ProductViewModel model)
+        public bool UpdateProduct(ProductModel model)
         {
             try
             {
@@ -109,17 +112,44 @@ namespace PersonalProject.BLL.Services
             return false;
         }
 
-        public List<ProductToSellModel> GetAllProductsToSell()
+        public ShoppingCartModel GetAllProductsToSell()
         {
-            var productsToSell = _dbContext.Products.Where(p => p.ProductQuantity > 0).Select(p =>
-            new ProductToSellModel
-            {
-                ProductId = p.Id,
-                ProductName = p.ProductName,
-                ProductPrice = p.ProductPrice,
-            }).ToList();
+            var shoppingCart = ShoppingCartProducts();
+            shoppingCart.ProductsToSell = _dbContext.Products.Where(p => p.ProductQuantity > 0).Select(p =>
+               new ProductToSellModel
+               {
+                   ProductId = p.Id,
+                   ProductName = p.ProductName,
+                   ProductPrice = p.ProductPrice
+               }).ToList();
 
-            return productsToSell;
+            return shoppingCart;
+        }
+
+        public ShoppingCartModel AddProductsToSellToShoppingCart(ProductToSellModel productToSell)
+        {
+            var shoppingCart = _memoryCache.Get<ShoppingCartModel>("ShoppingCart") ?? new ShoppingCartModel();
+
+
+            shoppingCart.ShoppingCartProducts.Add(new ProductToSellModel
+            {
+                ProductId = productToSell.ProductId,
+                ProductName = productToSell.ProductName,
+                ProductPrice = productToSell.ProductPrice
+            });
+            shoppingCart.TotalCost = shoppingCart.ShoppingCartProducts.Select(s => s.ProductPrice).Sum();
+
+            var cacheOption = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromHours(2));
+            _memoryCache.Set("ShoppingCart", shoppingCart, cacheOption);
+
+            return shoppingCart;
+        }
+
+        public ShoppingCartModel ShoppingCartProducts()
+        {
+            var shoppingCart = _memoryCache.Get<ShoppingCartModel>("ShoppingCart") ?? new ShoppingCartModel();
+
+            return shoppingCart;
         }
     }
 }
