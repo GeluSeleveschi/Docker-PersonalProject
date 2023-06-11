@@ -7,44 +7,46 @@
     <title>Add Icon Button Example</title>
 </head>
 <body>
-    @if (Model.ShoppingCartProducts != null && Model.ShoppingCartProducts.Any())
-    {
-        <div id="shopping-cart">
-            @Html.Partial("_ShoppingCart")
-        </div>
-    }
-    <section class="products">
-        <table class="table" id="product-table">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayName("Product")
-                    </th>
-                    <th>
-                        @Html.DisplayName("Price")
-                    </th>
-                    <th class="action">Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.ProductsToSell)
-                {
+    <section class="main-content">
+        @if (Model.ShoppingCartProducts != null && Model.ShoppingCartProducts.Any())
+        {
+            <div id="shopping-cart">
+                @Html.Partial("_ShoppingCart")
+            </div>
+        }
+        <section class="products">
+            <table class="table" id="product-table">
+                <thead>
                     <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.ProductName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.ProductPrice)
-                        </td>
-                        <td class="action">
-                            <button type="button" class="add-btn" data-product-id="@item.ProductId" data-product-name="@item.ProductName" data-product-price="@item.ProductPrice">
-                                <i class="fas fa-plus"></i>
-                            </button>
-                        </td>
+                        <th>
+                            @Html.DisplayName("Product")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Price")
+                        </th>
+                        <th class="action">Actions</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.ProductsToSell)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProductName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProductPrice)
+                            </td>
+                            <td class="action">
+                                <button type="button" class="add-btn" data-product-id="@item.ProductId" data-product-name="@item.ProductName" data-product-price="@item.ProductPrice">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
     </section>
 </body>
 
@@ -56,16 +58,22 @@
 
     #shopping-cart {
         text-align: -webkit-right;
-        position: absolute;
-        right: 7%;
+        width: 100%;
+        margin-bottom: 1rem;
     }
 
     .products {
-        width: 85%;
+        width: 90%;
     }
 
     .action {
         text-align: center;
+        width: 15%;
+    }
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
     }
 </style>
 
