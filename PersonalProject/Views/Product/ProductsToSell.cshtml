@@ -1,10 +1,13 @@
 ﻿@using Newtonsoft.Json;
 @using System.Web;
 @model PersonalProject.BLL.Models.ShoppingCartModel
+
+@{
+    ViewData["Title"] = "Products to sell";
+}
+
 <head>
     <meta name="viewport" content="width=device-width" />
-
-    <title>Add Icon Button Example</title>
 </head>
 <body>
     <section class="main-content">
@@ -38,7 +41,7 @@
                                 @Html.DisplayFor(modelItem => item.ProductPrice)
                             </td>
                             <td class="action">
-                                <button type="button" class="add-btn" data-product-id="@item.ProductId" data-product-name="@item.ProductName" data-product-price="@item.ProductPrice">
+                                <button type="button" class="add-btn" title="Add to shopping cart" data-product-id="@item.ProductId" data-product-name="@item.ProductName" data-product-price="@item.ProductPrice">
                                     <i class="fas fa-plus"></i>
                                 </button>
                             </td>

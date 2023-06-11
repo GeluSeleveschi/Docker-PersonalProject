@@ -28,15 +28,13 @@ namespace PersonalProject.Controllers
         [HttpPost]
         public IActionResult AddEditProduct(ProductModel model)
         {
+            if (!ModelState.IsValid) return View(model);
+
             var result = false;
             if (model != null && model.Id != 0)
-            {
                 result = _productService.UpdateProduct(model);
-            }
             else
-            {
                 result = _productService.AddProduct(model);
-            }
 
             return result ? RedirectToAction("GetAllProducts") : UnprocessableEntity(result);
         }
@@ -71,8 +69,21 @@ namespace PersonalProject.Controllers
         public JsonResult DeleteProductFromShoppingCart(int productId)
         {
             var result = _productService.DeleteProductFromShoppingCart(productId);
-
             return Json(new { success = result });
+        }
+
+        [HttpPost]
+        public JsonResult SaveOrder()
+        {
+            var result = _productService.SaveOrder();
+            return Json(new { success = result });
+        }
+
+        [HttpGet]
+        public ActionResult GetAllOrders()
+        {
+            var orders = _productService.GetAllOrders();
+            return View("Orders", orders);
         }
     }
 }

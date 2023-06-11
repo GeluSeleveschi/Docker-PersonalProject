@@ -61,6 +61,8 @@ namespace PersonalProject.BLL.Services
                 {
                     var product = _dbContext.Products.AsNoTracking().FirstOrDefault(p => p.Id == id.Value) ?? new Product();
                     var productViewModel = _mapper.Map(product, new ProductModel());
+
+                    return productViewModel;
                 }
             }
             catch (Exception ex)
@@ -78,9 +80,9 @@ namespace PersonalProject.BLL.Services
                 var productEntity = _dbContext.Products.FirstOrDefault(p => p.Id == model.Id);
                 if (productEntity != null)
                 {
-                    productEntity = _mapper.Map<Product>(model);
-
+                    _mapper.Map(model, productEntity);
                     _dbContext.SaveChanges();
+
                     return true;
                 }
             }
@@ -175,5 +177,47 @@ namespace PersonalProject.BLL.Services
             var cacheOption = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromHours(2));
             _memoryCache.Set(key, data, cacheOption);
         }
+
+        public bool SaveOrder()
+        {
+            var shoppingCart = ShoppingCartProducts();
+            if (shoppingCart != null && shoppingCart.ShoppingCartProducts != null && shoppingCart.ShoppingCartProducts.Any())
+            {
+                var order = new Order()
+                {
+                    OrderGuid = Guid.NewGuid(),
+                    DateCreated = DateTime.UtcNow,
+                    TotalCost = shoppingCart.TotalCost
+                };
+
+                _dbContext.Orders.Add(order);
+                _dbContext.SaveChanges();
+
+                var orderProductsList = new List<OrderProduct>();
+                foreach (var item in shoppingCart.ShoppingCartProducts)
+                {
+                    orderProductsList.Add(new OrderProduct()
+                    {
+                        OrderId = order.Id,
+                        ProductId = item.ProductId
+                    });
+                }
+
+                _dbContext.OrderProducts.AddRange(orderProductsList);
+                _dbContext.SaveChanges();
+
+                _memoryCache.Remove("ShoppingCart");
+                return true;
+            }
+
+            return false;
+        }
+
+        public List<OrderViewModel> GetAllOrders()
+            => _dbContext.Orders.AsNoTracking().Select(o => new OrderViewModel
+            {
+                DateCreated = o.DateCreated.ToString("dddd, MMMM d, yyyy h:mm:ss tt"),
+                TotalCost = o.TotalCost
+            }).ToList() ?? new List<OrderViewModel>();
     }
 }

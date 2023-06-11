@@ -1,4 +1,5 @@
 ﻿@model PersonalProject.BLL.Models.ShoppingCartModel
+
 <section class="shoppingCart">
     <table class="table" id="shoppingCart-table">
         <thead>
@@ -23,7 +24,7 @@
                         @Html.DisplayFor(modelItem => item.ProductPrice)
                     </td>
                     <td class="action">
-                        <button type="button" class="remove-btn" data-product-id="@item.ProductId">
+                        <button type="button" title="Delete Product" class="remove-btn" data-product-id="@item.ProductId">
                             <i class="fa fa-trash"></i>
                         </button>
                     </td>
@@ -31,9 +32,16 @@
             }
         </tbody>
     </table>
-    <div class="pull-right">
-        <span>Total Cost: </span> @Html.DisplayFor(model => model.TotalCost)
-    </div>
+    <section class="buttons">
+        <div class="purchase">
+            <button type="button" title="Purchase" class="purchase-btn">
+                <i class="fa fa-credit-card" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="pull-right">
+            <span>Total Cost: </span> @Html.DisplayFor(model => model.TotalCost)
+        </div>
+    </section>
 </section>
 <style>
     .pull-right {
@@ -54,6 +62,11 @@
     .remove-btn {
         border-radius: 30px;
     }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
 </style>
 
 <script>
@@ -69,6 +82,22 @@
                     setTimeout(function () {
                         window.location.reload();
                     }, 700);
+                }
+            }
+        });
+    })
+
+    $(".purchase-btn").click(function () {
+        $.ajax({
+            url: '/Product/SaveOrder',
+            data: {},
+            type: 'POST',
+            success: function (response) {
+                if (response.success) {
+                    toastr.success("Order successfully processed", "Success");
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 1000);
                 }
             }
         });

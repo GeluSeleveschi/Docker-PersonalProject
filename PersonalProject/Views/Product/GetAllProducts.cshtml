@@ -1,22 +1,22 @@
 ﻿@model IEnumerable<PersonalProject.BLL.Entities.Product>
 
 @{
-    ViewData["Title"] = "GetAllProducts";
+    ViewData["Title"] = "Products";
 }
 
 <h1>Products</h1>
 
 <p>
-    <a asp-action="AddEditProduct" asp-controller="Product">Create New</a>
+    <a asp-action="AddEditProduct" asp-controller="Product">Add New Product</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ProductName)
+                @Html.DisplayName("Product")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ProductPrice)
+                @Html.DisplayName("Price")
             </th>
             <th>Actions</th>
         </tr>

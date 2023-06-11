@@ -12,6 +12,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.ProductName)
         @Html.TextBoxFor(model => model.ProductName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ProductName, "", new { @class = "text-danger" })
     </div>
     <br />
     <div class="form-group">
@@ -23,13 +24,15 @@
     <div class="form-group">
         @Html.LabelFor(model => model.ProductPrice)
         @Html.TextBoxFor(model => model.ProductPrice, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ProductPrice, "", new { @class = "text-danger" })
     </div>
     <br />
 
     <div class="form-group">
         @Html.LabelFor(model => model.ProductQuantity)
         @Html.TextBoxFor(model => model.ProductQuantity, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ProductQuantity, "", new { @class = "text-danger" })
     </div>
     <br />
-    <button type="submit" class="btn btn-primary">Add</button>
+    <button type="submit" class="btn btn-primary">Save</button>
 }

@@ -36,6 +36,9 @@ namespace PersonalProject.BLL.Migrations
                     b.Property<Guid>("OrderGuid")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<decimal?>("TotalCost")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Orders");
