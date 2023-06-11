@@ -66,5 +66,13 @@ namespace PersonalProject.Controllers
             var model = _productService.AddProductsToSellToShoppingCart(product);
             return Json(new { success = model.ShoppingCartProducts.Any() });
         }
+
+        [HttpPost]
+        public JsonResult DeleteProductFromShoppingCart(int productId)
+        {
+            var result = _productService.DeleteProductFromShoppingCart(productId);
+
+            return Json(new { success = result });
+        }
     }
 }

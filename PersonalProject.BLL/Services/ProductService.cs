@@ -130,7 +130,6 @@ namespace PersonalProject.BLL.Services
         {
             var shoppingCart = _memoryCache.Get<ShoppingCartModel>("ShoppingCart") ?? new ShoppingCartModel();
 
-
             shoppingCart.ShoppingCartProducts.Add(new ProductToSellModel
             {
                 ProductId = productToSell.ProductId,
@@ -139,8 +138,7 @@ namespace PersonalProject.BLL.Services
             });
             shoppingCart.TotalCost = shoppingCart.ShoppingCartProducts.Select(s => s.ProductPrice).Sum();
 
-            var cacheOption = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromHours(2));
-            _memoryCache.Set("ShoppingCart", shoppingCart, cacheOption);
+            ChacheData("ShoppingCart", shoppingCart);
 
             return shoppingCart;
         }
@@ -150,6 +148,32 @@ namespace PersonalProject.BLL.Services
             var shoppingCart = _memoryCache.Get<ShoppingCartModel>("ShoppingCart") ?? new ShoppingCartModel();
 
             return shoppingCart;
+        }
+
+        public bool DeleteProductFromShoppingCart(int productId)
+        {
+            var shoppingCart = _memoryCache.Get<ShoppingCartModel>("ShoppingCart") ?? new ShoppingCartModel();
+
+            if (shoppingCart.ShoppingCartProducts != null && shoppingCart.ShoppingCartProducts.Any())
+            {
+                var product = shoppingCart.ShoppingCartProducts.FirstOrDefault(p => p.ProductId == productId);
+                if (product != null)
+                {
+                    shoppingCart.TotalCost -= product.ProductPrice;
+                    shoppingCart.ShoppingCartProducts.Remove(product);
+                    ChacheData("ShoppingCart", shoppingCart);
+
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void ChacheData(string key, object data)
+        {
+            var cacheOption = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromHours(2));
+            _memoryCache.Set(key, data, cacheOption);
         }
     }
 }

@@ -14,5 +14,6 @@ namespace PersonalProject.BLL.Services.Interfaces
         ShoppingCartModel GetAllProductsToSell();
         ShoppingCartModel AddProductsToSellToShoppingCart(ProductToSellModel productToSell);
         ShoppingCartModel ShoppingCartProducts();
+        bool DeleteProductFromShoppingCart(int productId);
     }
 }

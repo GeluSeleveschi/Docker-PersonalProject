@@ -9,7 +9,7 @@
                 <th>
                     @Html.DisplayName("Price")
                 </th>
-                <th>Actions</th>
+                <th class="action">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -22,8 +22,10 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.ProductPrice)
                     </td>
-                    <td>
-                        @*<a asp-action="DeleteProduct" asp-controller="Product" asp-route-id="@item.Id">Delete</a>*@
+                    <td class="action">
+                        <button type="button" class="remove-btn" data-product-id="@item.ProductId">
+                            <i class="fa fa-trash"></i>
+                        </button>
                     </td>
                 </tr>
             }
@@ -43,4 +45,32 @@
         width: 25%;
         min-width: 320px;
     }
+
+    .action {
+        text-align: center;
+        width: 15%;
+    }
+
+    .remove-btn {
+        border-radius: 30px;
+    }
 </style>
+
+<script>
+    $(".remove-btn").click(function () {
+        let productId = $(this).data('product-id')
+        $.ajax({
+            url: '/Product/DeleteProductFromShoppingCart',
+            data: { productId },
+            type: 'POST',
+            success: function (response) {
+                if (response.success) {
+                    toastr.success("Product successfully deleted", "Success");
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 700);
+                }
+            }
+        });
+    })
+</script>
